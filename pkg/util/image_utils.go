@@ -75,7 +75,7 @@ func GetImageForName(imageName string) (Image, error) {
 // Once a reference is obtained, it attempts to unpack the v1.Image's reader's contents
 // into a temp directory on the local filesystem.
 func GetImage(imageName string, includeLayers bool, cacheDir string) (Image, error) {
-	logrus.Infof("retrieving image: %s", imageName)
+	logrus.Infof("Test Change here with new retrieving image: %s", imageName)
 	var img v1.Image
 	var err error
 	if IsTar(imageName) {
